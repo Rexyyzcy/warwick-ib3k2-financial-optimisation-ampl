@@ -1,0 +1,26 @@
+#RESET
+reset;
+
+#load the model
+model W7_Quiz.mod;
+
+#load the data:
+data W7_Quiz.dat;
+
+
+#change the colver (optional)
+option solver Gurobi;
+
+
+#for {a in 1..11}{
+#let  Alpha := AlphaRange[a];
+let  Alpha := 0;
+
+#solve
+solve;
+
+
+#Show results:
+display w;
+display Beta, Lemda;
+#}

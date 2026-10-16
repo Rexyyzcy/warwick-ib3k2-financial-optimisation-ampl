@@ -1,0 +1,25 @@
+#RESET
+reset;
+
+#load the model
+model W6_Quiz.mod;
+
+#load the data:
+data W6_Quiz.dat;
+
+
+let Exp_r_p :=0.125;
+
+#change the colver (optional)
+option solver CPLEX;
+
+#solve
+solve;
+
+#Show results:
+display w,PortfolioRisk;
+
+display u_i,VC_Matrix;
+
+
+display sum_expression;

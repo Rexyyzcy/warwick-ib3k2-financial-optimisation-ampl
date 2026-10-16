@@ -1,0 +1,23 @@
+#RESET
+reset;
+
+#load the model
+model Q1c.mod;
+
+#load the data:
+data Q1c.dat;
+
+
+#change the colver (optional)
+option solver Gurobi;
+
+
+#solve
+solve;
+
+
+#Show results:
+display x;
+display z;
+display B;
+display Loan;

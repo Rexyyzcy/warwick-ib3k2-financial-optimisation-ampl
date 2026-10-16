@@ -1,0 +1,23 @@
+#RESET
+reset;
+
+#load the model
+model W3_Quiz.mod;
+
+#load the data:
+data W3_Quiz.dat;
+
+#change the colver (optional)
+option solver gurobi;
+
+#solve
+solve;
+
+#Show results:
+display x;
+display b;
+display return;
+
+#Other options to display:
+show return, budget;
+display return, budget;

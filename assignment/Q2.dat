@@ -1,0 +1,70 @@
+param U:= 3; #3 stocks
+param T:= 9; #Time
+
+
+param S9:=4;
+
+
+param w0:= 70000; #initial wealth
+param G:=120000;#goal of investment at the end
+
+param b:=0.05;#Cost of borrowing
+
+param P:= #Probability for each scenario s9 at final stage 9
+1	0.28
+2	0.12
+3	0.3
+4	0.3;
+
+
+#return at time t for stock u at each node (t,k) up to node (9,1)
+param r91: 
+	1			2		3:= #stock 1,2,3
+1	0.06		0.07	0.08 	#rate of return from 0 to (1,1)
+2	0.15		0.06	0.09	#(2,1)
+3	0.05		0.05	0.10	#(3,1)
+4	0.04		0.07	0.05	#(4,1)
+5	0.05		0.10	0.04	#(5,1)
+6	0.06		0.11	0.05	#(6,1)
+7	0.08		0.06	0.05	#(7,1)
+8	0.10		0.05	0.04	#(8,1)
+9	0.11		0.04	0.03;	#(9,1)
+
+#return at time t for stock u at each node (t,k) up to node (9,2)
+param r92: 
+	1			2		3:= #stock 1,2,3
+1	0.06		0.07	0.08 	#rate of return from 0 to (1,1)
+2	0.05		0.06	0.09	#(2,1)
+3	0.05		0.05	0.10	#(3,1)
+4	0.04		0.07	0.05	#(4,1)
+5	0.05		0.10	0.04	#(5,1)
+6	0.06		0.11	0.05	#(6,1)
+7	0.08		0.06	0.05	#(7,1)
+8	0.10		0.05	0.04	#(8,1)
+9	0.06		0.04	0.03;	#(9,2)
+
+#return at time t for stock u at each node (t,k) up to node (9,3)
+param r93: 
+	1			2		3:= #stock 1,2,3
+1	0.06		0.07	0.08 	#rate of return from 0 to (1,1)
+2	0.05		0.06	0.07	#(2,2)
+3	0.04		0.03	0.06	#(3,2)
+4	0.03		0.03	0.05	#(4,2)
+5	0.04		0.05	0.04	#(5,2)
+6	0.03		0.05	0.06	#(6,2)
+7	0.04		0.05	0.08	#(7,2)
+8	0.05		0.06	0.11	#(8,2)
+9	0.05		0.07	0.15;	#(9,3)
+
+#return at time t for stock u at each node (t,k) up to node (9,4)
+param r94: 
+	1			2		3:= #stock 1,2,3
+1	0.06		0.07	0.08 	#rate of return from 0 to (1,1)
+2	0.05		0.06	0.07	#(2,2)
+3	0.04		0.03	0.06	#(3,2)
+4	0.03		0.03	0.05	#(4,2)
+5	0.03		0.04	0.04	#(5,3)
+6	0.03		0.02	0.03	#(6,3)
+7	0.02		0.01	0.02	#(7,3)
+8	0.02		0.02	0.03	#(8,3)
+9	0.01		0.02	0.03;	#(9,4)

@@ -1,0 +1,23 @@
+#RESET
+reset;
+
+#load the model
+model W9_Quiz.mod;
+
+#load the data:
+data W9_Quiz.dat;
+
+
+#change the colver (optional)
+option solver Gurobi;
+
+
+#solve
+solve;
+
+
+#Show results:
+display ExpectedPortfolioHolding;
+display h0;
+display h1;
+display h2;

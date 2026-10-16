@@ -1,0 +1,22 @@
+#RESET
+reset;
+
+#load the model
+model W4_Quiz1.mod;
+
+#load the data:
+data W4_Quiz1.dat;
+
+#change the colver (optional)
+option solver CPLEX;
+
+#solve
+solve;
+
+#Show results:
+display x;
+display benefit;
+
+#Other options to display:
+show budget;
+display budget;

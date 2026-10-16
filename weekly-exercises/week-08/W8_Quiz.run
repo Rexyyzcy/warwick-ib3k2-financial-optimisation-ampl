@@ -1,0 +1,24 @@
+#RESET
+reset;
+
+#load the model
+model W8_Quiz.mod;
+
+#load the data:
+data W8_Quiz.dat;
+
+
+#change the colver (optional)
+option solver Gurobi;
+#option gurobi_options 'qp:nonconvex=2';
+
+
+#solve
+solve;
+
+
+#Show results:
+display x0,x1;
+#display x21;
+display ExpectedReturn;
+display w_T;

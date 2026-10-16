@@ -1,0 +1,18 @@
+#RESET
+reset;
+
+#load the model
+model W5_Quiz.mod;
+
+#load the data:
+data W5_Quiz.dat;
+
+#change the colver (optional)
+option solver GUROBI;
+
+#solve
+solve;
+
+#Show results:
+display x;
+display P_L, k #Q1, Q2

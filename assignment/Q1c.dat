@@ -1,0 +1,54 @@
+# PARAMETER VALUES
+param N := 10; #10 securities to be considered
+param T := 4; #Investment horizon
+
+param S4:=5;
+
+param P:= #Probability at final stage for each scenario
+1	0.27
+2	0.18
+3	0.45
+4	0.04
+5	0.06;
+
+
+param b:#[t,k] time t combination towards final scenario k in S4
+	1		2		3		4		5:=
+1	0.05	0.05	0.05	0.01	0.01
+2	0.07	0.07	0.06	0.02	0.02
+3	0.09	0.06	0.05	0.02	0.02
+4	0.12	0.05	0.08	0.01	0.04;
+
+param r:#[t,k] time t combination towards final scenario k in S4
+	1		2		3		4		5:=
+1	0.06	0.06	0.06	0.01	0.01
+2	0.06	0.06	0.05	0.01	0.01
+3	0.08	0.09	0.07	0.02	0.02
+4	0.11	0.12	0.04	0.01	0.01;
+
+
+
+param p := #price of bonds
+1 102
+2 99
+3 101
+4 100
+5 100
+6 98
+7 105
+8 110
+9 101
+10 103;
+
+param C := #future cash requirement
+1 13000
+2 18000
+3 20000
+4 26000;
+
+param f:#Cash inflow for 10 bonds in 4 years[Year, Bond]
+	1	2	3	4	5	6	7	8	9	10:=
+1	105	104	106	103	3	3	6	7	2	6
+2	0	0	0	0	103	103	106	107	2	6
+3	0	0	0	0	0	0	0	0	102	6
+4	0	0	0	0	0	0	0	0	0	106;
