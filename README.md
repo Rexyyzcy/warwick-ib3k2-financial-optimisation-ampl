@@ -8,7 +8,7 @@ This repository records work submitted and developed in **2022/23**. It is an ed
 
 | Location | Contents |
 | --- | --- |
-| [`assignment/`](assignment/) | A copy of my five-page submission with my student number removed, plus the original Q1c and Q2 AMPL files. Q1 concerns bond portfolio dedication with uncertain rates; Q2 concerns investment decisions over a nine-year scenario tree. |
+| [`assignment/`](assignment/README.md) | A page-by-page preview of my five-page submission, a downloadable redacted PDF, and the original Q1c and Q2 AMPL files. Q1 concerns bond portfolio dedication with uncertain rates; Q2 concerns investment decisions over a nine-year scenario tree. |
 | [`weekly-exercises/`](weekly-exercises/) | My Week 3–9 quiz model, data and run files, grouped by topic. |
 | [`notes/ampl-quickstart.md`](notes/ampl-quickstart.md) | A short companion guide distilled from my personal AMPL notes. |
 
