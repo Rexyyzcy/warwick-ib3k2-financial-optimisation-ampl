@@ -1,6 +1,6 @@
 # Financial Optimisation with AMPL — Warwick IB3K2 (2022/23)
 
-An archive of my undergraduate coursework for **IB3K2 Financial Optimisation** at the University of Warwick. It includes a written assignment with mathematical formulations, scenario trees and results, alongside AMPL model, data and run files. The examples cover bond cash-flow matching, portfolio decisions and scenario-based investment planning.
+An archive of my undergraduate coursework for **IB3K2 Financial Optimisation** at the University of Warwick. It includes a written assignment (82 marks) with mathematical formulations, scenario trees and results, alongside AMPL model, data and run files. The examples cover bond cash-flow matching, portfolio decisions and scenario-based investment planning.
 
 This repository records work submitted and developed in **2022/23**. It is an educational archive, not current investment advice or an officially maintained course resource. The module continues to evolve; see the [Warwick module catalogue](https://courses.warwick.ac.uk/modules/2026/IB3K2-15) for the current description.
 
